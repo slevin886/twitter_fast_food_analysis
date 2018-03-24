@@ -2,3 +2,6 @@
 *.xlsx
 *.csv
 twitter_codes.py
+*.pem
+*.DS_Store
+__pycache*
