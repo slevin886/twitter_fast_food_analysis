@@ -12,7 +12,7 @@ NOTE: This readme is a work in progress
 #Positivity & Popularity
 
 <p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/Positivity_Popularity.png" height="420" width="560">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/company_pops.png" height="420" width="560">
 </p>
 
 #Negativity Rate & Time of Day
