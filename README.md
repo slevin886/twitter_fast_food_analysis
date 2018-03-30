@@ -20,3 +20,9 @@ NOTE: This readme is a work in progress
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/negrate2.png" height="460" width="1000">
 </p>
+
+#Consumer Behavioral Profiles
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_behavior.png" height="400" width="950">
+</p>
