@@ -21,6 +21,18 @@ NOTE: This readme is a work in progress
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/negrate2.png" height="460" width="1000">
 </p>
 
+#Company Tweet Characteristics & Customer Reuse
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_tweet_behav.png" height="500" width="640">
+</p>
+
+#Company Behavior on Twitter
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_twit_use.png" height="420" width="560">
+</p>
+
 #Consumer Behavioral Profiles
 
 <p align="left">
