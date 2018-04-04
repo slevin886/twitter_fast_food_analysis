@@ -15,6 +15,12 @@ NOTE: This readme is a work in progress
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/company_pops.png" height="420" width="560">
 </p>
 
+#Consumer Satisfaction by Day
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/weekdaysentiment.png" height="420" width="560">
+</p>
+
 #Negativity Rate & Time of Day
 
 <p align="left">
