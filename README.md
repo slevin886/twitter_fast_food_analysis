@@ -3,6 +3,11 @@
 
 NOTE: This readme is a work in progress 
 
+Contrary to conventional wisdom, the vast majority of fast food consumers are middle class- in fact, even the most affluent are only [marginally less likely](https://www.cnn.com/2017/07/12/health/poor-americans-fast-food-partner/index.html) (80% vs. 73%) than the poor to eat fast food on a regular basis. Fast food consumption also trends young, peaking in the 18-29 age group. Likewise, *Twitter* trends young and affluent. Of its ~69 million regular users in the United States, [36% are in the 18-29 age group](https://blog.hootsuite.com/twitter-statistics/). With 74% of these users using the platform to get their news (more than the 68% of *Facebook* users) and even more using it to interact with companies and social media influencers, building and maintaining a strong presence and brand on Twitter is vital to stay competitve. 
+
+
+NOTE: This readme is a work in progress 
+
 #Brand Positivity
 
 <p align="left">
