@@ -25,6 +25,12 @@ The graphic below shows brand positivity as a measure of the polarity of custome
 
 In addition to showing substantial variation in brand performance (all, on average, more positive than negative), the results are reassuring of the validity of the metric based on prior knowledge of brand popularity. The top performer, Shake Shack, is renown for its carefully crafted branding and the (generally positive) hype surrounding [its burgers and market expansion](https://www.investors.com/research/the-new-america/how-shake-shacks-growth-may-catch-up-to-its-hype/). In contrast, the worst performer, Domino's, has had its brand repeatedly battered by scandal and, despite what the [*Harvard Business Review* suggests](https://hbr.org/2016/11/how-dominos-pizza-reinvented-itself), has not completely rebounded. 
 
+However, looking only at unique tweets below(eliminating retweets and multiple tweets by the same user), there is a clear decline in overall sentiment and a reordering of the companies' comparative scores . 
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/polarity.png" height="420" width="560">
+</p>
+
 #Positivity & Popularity
 
 <p align="left">
