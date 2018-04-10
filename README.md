@@ -15,7 +15,7 @@ Facing these challenges, I tested various solutions (detailed throughout this RE
 
 ## #Brand Positivity
 
-I measured brand positivity using the mean [TextBlob](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) polarity score (a floating number between -1 (totally negative) & 1 (totally positive) of each tweet.  TextBlob's polarity score is robust to negation (ex. 'not great', is scored ~-1, 'great' ~1 ), can interpret emoticon sentiment :), and is built off of the academic work of the [respected *pattern* library](https://www.clips.uantwerpen.be/pages/pattern-web). Overall, 44% of tweets were positive, 15% were negative, and 43% were neutral.
+I measured brand positivity using the mean [TextBlob](https://textblob.readthedocs.io/en/dev/quickstart.html#sentiment-analysis) sentiment (also often referred to as *polarity*) score (a floating number between -1 (totally negative) & 1 (totally positive) of each tweet.  TextBlob's polarity score is robust to negation (ex. 'not great', is scored ~-1, 'great' ~1 ), can interpret emoticon sentiment :), and is built off of the academic work of the [respected *pattern* library](https://www.clips.uantwerpen.be/pages/pattern-web). Overall, 44% of tweets were positive, 15% were negative, and 43% were neutral.
 
 The graphic below shows brand positivity, company by company, as a measure of the polarity of customer mentions:
 
@@ -33,11 +33,15 @@ However, including a measure (the orange bars below) of only unique tweets- elim
 
 Starbucks and Shake Shack both see 6% declines in overall favorability, while Wendy's favorability increases by 2%. The mechanism for the decrease is not only through fewer positive tweets, but also a proportional increase in negative tweets. That the change in score varies widely across companies can lend itself to various interpretations. It could be that positive tweets are simply more likely to be retweeted and/or that the cross-company variation is purely random (NOTE: these are NOT retweets of the company's tweets- I purposely did not include those in this analysis).  On the other hand, it could indicate that some companies are purchasing more retweets of positive customer tweets- [a not uncommon strategy](http://www.businessinsider.com/fake-twitter-followers-test-2012-8). 
 
-#Positivity & Popularity
+## #Positivity & Popularity
+
+Another measure of brand favorability is the 'favorite count' (the equivalent of 'liking' a post on *facebook*). In the sample, favorite count is heavilly skewed (84% of tweets have 0 favorites, while the top tweet has 857). Below you can see the mean sentiment score contrasted with the mean favorite count. 
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/company_pops.png" height="420" width="560">
 </p>
+
+As you can see above, there is no obvious visual correlation between mean favorite count and mean sentiment. This lends credence to the argument that neither positivity nor negativity drive the popularity of a tweet. This is in marked contrast to the favorite count of companys' own tweets, which have a strong positive correlation with their overall brand favorability  (0.31 pearson correlation). This is not a contradiction. It makes intuitive sense that having more customers willing to favorite your tweets (inevitably positive or neutral in sentiment) would indicate more customers willing to tweet their own positive reaction. 
 
 #Consumer Satisfaction by Day
 
