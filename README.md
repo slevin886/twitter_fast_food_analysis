@@ -66,7 +66,7 @@ This is in marked contrast to the favorite count of companys' own tweets, which 
 #Company Behavior on Twitter
 
 <p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_twit_use.png" height="420" width="560">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_behav.png" height="320" width="560">
 </p>
 
 #Consumer Behavioral Profiles
