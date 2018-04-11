@@ -43,19 +43,33 @@ Another measure of brand favorability is the 'favorite count' (the equivalent of
 
 As you can see above, there is no obvious visual (or quantitative for that matter) correlation between mean favorite count and mean sentiment. This runs against the idea of [hypercriticism](http://bigthink.com/ideafeed/is-negative-content-more-likely-to-go-viral) (the idea that negative statements tend to be more intelligent, and by extension, more popular) and instead suggests that at least in this sample neither positivity nor negativity drive the popularity of a tweet. 
 
-This is in marked contrast to the favorite count of companys' own tweets, which have a strong positive correlation with their overall brand favorability  (0.31 pearson correlation). This is not a contradiction. It makes intuitive sense that having more customers willing to favorite company tweets (inevitably positive or neutral in sentiment) would indicate more customers willing to tweet their own positive reaction. 
+This is in marked contrast to the favorite count of companys' own tweets, which have a strong positive correlation with their overall brand favorability  (0.31 pearson correlation). This is not a contradiction. It makes intuitive sense that having more customers willing to favorite company tweets (inevitably positive or neutral in sentiment) would indicate more customers willing to tweet their own positive reaction to the brand. 
 
-#Consumer Satisfaction by Day
+## #Marketing by Day & Time
+
+Over the three weeks of data collected, Tuesday narrowly edged out Thursday for the highest overall volume of tweets (with nearly 3x Sunday's tweet volume- the slowest day). Tuesday also had the highest overall positive sentiment, while Thursday slipped to 4th behind Monday and Wednesday. Undoubtedly, running ads when Twitter is heavilly trafficked with positive consumers is an advantageous strategy- particularly regarding promotions or new products. 
+
+Below, you can see the sentiment of customer tweets by company across each day of the week (the width of the line being a measure of the mean favorite count by day):
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/weekdaysentiment.png" height="420" width="560">
 </p>
 
-#Negativity Rate & Time of Day
+The peak in Tweet positivity on Tuesday is unmistakable, although there is substantial cross-company variation (Cracker Barrel peaks Thursday, Domino's Wednesday). Likewise, Saturday and Sunday clearly trail the weekdays in positive sentiment. This is not to say these days shouldn't be a focus on online engagement. Targeting your own dissatisfied customers through direct messages or other company's dissatisfied customers through a campaign can both be winning strategies.    
+
+The graphic below shows the average daily tweet volume by company. In contrast to the variation in daily sentiment across companies, there is higher covariance in tweet volume. However, it can't be ruled out that this isn't at least somewhat biased by the artificial limits Twitter put on the amount of Tweets I could scrape. 
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/mentions_by_day.png" height="365" width="630">
+</p>
+
+Identifying the optimal time of day to target customers was trickier. At any given collection time, Twitter returns a 'randomized' subset of a given query- not necessarily uniformly distributed across time. Likewise, I automated the script to collect customer tweets at 5pm and 12am EST daily, not every hour. To solve for this problem, I looked at the negativity *rate* (i.e. the number of negative tweets as a percentage of all tweets at a given hour). 
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/negrate2.png" height="460" width="1000">
 </p>
+
+From the graphic above, 4pm and 9am jump out as times with a high volume of tweets and a low negativity rate- ideal for targeting large numbers of satisfied customers. On the other hand, and unsurprisingly, negativity tends to peak overnight with fewer customers tweeting.
 
 #Company Tweet Characteristics & Customer Reuse
 
