@@ -71,17 +71,27 @@ Identifying the optimal time of day to target customers was trickier. At any giv
 
 From the graphic above, 4pm and 9am jump out as times with a high volume of tweets and a low negativity rate- ideal for targeting large numbers of satisfied customers. On the other hand, and unsurprisingly, negativity tends to peak overnight with fewer customers tweeting.
 
-#Company Tweet Characteristics & Customer Reuse
+## #New Customer Acquisition & Consumer Profiles
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/heatmap.png" height="420" width="560">
+</p>
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_behavior.png" height="400" width="950">
+</p>
+
+## #Company Behavior and Effectiveness
+
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_behav.png" height="320" width="560">
+</p>
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_tweet_behav.png" height="500" width="640">
 </p>
 
-#Company Behavior on Twitter
-
-<p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_behav.png" height="320" width="560">
-</p>
 
 #Consumer Behavioral Profiles
 
