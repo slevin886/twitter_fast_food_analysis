@@ -92,7 +92,7 @@ Another method I used to assess customer similarity was hierarchical clustering 
 Just as with the cosine similarities, Chipotle and Wendy's customers share the most profile information in common, trailed closely by the pairings of Dunkin Donuts & Sonic and Domino's & McDonald's. On the other hand, Wingstop customers are markedly different from all other company groupings. 
 
 <p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_behavior.png" height="400" width="950">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_popularity.png" height="420" width="560">
 </p>
 
 ## #Company Behavior and Effectiveness
