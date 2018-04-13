@@ -107,12 +107,6 @@ Just as with the cosine similarities, Chipotle and Wendy's customers share the m
 </p>
 
 
-#Consumer Behavioral Profiles
-
-<p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_behavior.png" height="400" width="950">
-</p>
-
 #Sentiment & Stock Price
 
 <p align="left">
