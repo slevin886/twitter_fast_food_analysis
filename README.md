@@ -5,7 +5,7 @@ NOTE: This README is a work in progress
 
 The intersection of fast food consumers and Twitter users is surprisingly wide. Contrary to conventional wisdom, the vast majority of fast food consumers are middle class- in fact, even the most affluent are only [marginally less likely](https://www.cnn.com/2017/07/12/health/poor-americans-fast-food-partner/index.html) (80% vs. 73%) than the poorest to eat fast food on a regular basis. Fast food consumption also trends young, peaking in the 18-29 age group. Likewise, *Twitter* trends young and affluent. Of its ~69 million regular users in the United States, [36% are in the 18-29 age group](https://blog.hootsuite.com/twitter-statistics/)(its largest demographic) and these users are more likely than not to have some college education. Equally, if not more important, 74% of Twitter users get at least some of their news on Twitter (more than the 68% of *Facebook* users) and a similar number follow brands for product updates and promotions. 
 
-With numbers like these, building and maintaining a strong brand presence on Twitter is vital to stay competitve. In that light, I collected 170,000 customer (and ~10,000 company) tweets over three weeks (March 9-30) to evaluate brand favorability and consumer behavior for 11 fast food chains (targeting tweets that used the company's handle, ex.'I love @McDonalds!'). With scripts collecting data four times per day on an Amazon Web Service EC2, I sought to use customer profiles and behavior to predict favorability toward a brand, identified the best times and days for marketing, and examined the interplay of favorability and stock price (targeting the following independent, publicly traded companies for that reason: *McDonald's, Chipotle, Starbucks, Denny's, Wendy's, Dunkin Donuts, Domino's, Sonic, Shake Shack, Wingstop, Cracker Barrel*). 
+With numbers like these, building and maintaining a strong brand presence on Twitter is vital to stay competitve. In that light, I collected 170,000 customer (and ~10,000 company) tweets over three weeks (March 9-30) to evaluate brand favorability and consumer behavior for 11 fast food chains (targeting tweets that used the company's handle, ex.'I love @McDonalds!'). With scripts collecting data four times per day on an Amazon Web Service EC2, I sought to use customer profiles and behavior to predict favorability toward a brand, hierarchically clustered consumers by company, identified the best times and days for marketing, and examined the interplay of favorability and stock price (targeting the following independent, publicly traded companies for that reason: *McDonald's, Chipotle, Starbucks, Denny's, Wendy's, Dunkin Donuts, Domino's, Sonic, Shake Shack, Wingstop, Cracker Barrel*). 
 
 ## #Data & Limitations 
 
@@ -71,11 +71,25 @@ Identifying the optimal time of day to target customers was trickier. At any giv
 
 From the graphic above, 4pm and 9am jump out as times with a high volume of tweets and a low negativity rate- ideal for targeting large numbers of satisfied customers. On the other hand, and unsurprisingly, negativity tends to peak overnight with fewer customers tweeting.
 
-## #New Customer Acquisition & Consumer Profiles
+## #New Customer Acquisition & Consumer Clustering
+
+In a mature and competitive market like fast food in the US, capturing a competitor's customers is key to growing market share. However, it is important to know *which* company's customers you should target. I analyzed the profiles of each company's customers (transforming text profiles (grouped by company) into a numeric TF-IDF matrix) to identify company clusters based on the similarities (as a function of word frequency by company and inverse function of dispersion across companies) of their customers' profiles. 
+
+The heatmap below shows the cosine similarities (larger numbers/lighter colors indicate *more* similarity between companies- cosine similarity is a measure of the directional similarity of vectors) of each company's customer profiles. 
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/heatmap.png" height="420" width="560">
 </p>
+
+By this metric, Chipotle and Wendy's have the most similar customers while Wingstop and Starbucks customers are the most dissimilar. Overall, McDonald's has the most in common with the other companies (narrowly edging out Dunkin Donuts) and Wingstop has the least in common with other companies (by a wide margin). 
+
+Another method I used to assess customer similarity was hierarchical clustering (a method that iterates through data points and identifies the 'nearest' similar data points- I locally optimized with 'Ward's method' which seeks to minimize variance between clusters, still using the TF-IDF vectors). The graphic below, called a *dendrogram*, shows the clustering of companies (the lower on the chart two companies are, the more similar their customers are).
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/dendrogram.png" height="420" width="560">
+</p>
+
+Just as with the cosine similarities, Chipotle and Wendy's customers share the most profile information in common, trailed closely by the pairings of Dunkin Donuts & Sonic and Domino's & McDonald's. On the other hand, Wingstop customers are markedly different from all other company groupings. 
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/consumer_behavior.png" height="400" width="950">
