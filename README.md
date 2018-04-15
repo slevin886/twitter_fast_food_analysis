@@ -63,7 +63,7 @@ Shake Shack customers are the most popular (most followers) and second most acti
 
 However, Domino's and McDonalds are exceptions. Verified customers are 52% more positive (than non-verified customers) about Domino's and 38% more positve McDonald's. This is likely an indication of the emphasis these companies are placing on purchasing positive endorsements. 
 
-## #Positivity & Popularity
+## #Building Popularity & Positivity
 
 Another measure of brand favorability is the 'favorite count' (the equivalent of 'liking' a post on *Facebook*). In the sample, favorite count is heavily skewed (84% of tweets have 0 favorites, while the top tweet has 857). Below you can see the mean sentiment score contrasted with the mean favorite count. 
 
@@ -74,6 +74,14 @@ Another measure of brand favorability is the 'favorite count' (the equivalent of
 As you can see above, there is no obvious visual (or quantitative for that matter) correlation between mean favorite count and mean sentiment. This runs against the idea of [hypercriticism](http://bigthink.com/ideafeed/is-negative-content-more-likely-to-go-viral) (the idea that negative statements tend to be more intelligent, and by extension, more popular) and instead suggests that at least in this sample neither positivity nor negativity drive the popularity of a tweet. Therefore, it may be no fool's errand to encourage positive customer tweeting (ex. through clever hashtags) in the hopes of virality. 
 
 This is in marked contrast to the favorite count of a company's own tweets, which have a strong positive correlation with their overall brand favorability  (0.31 pearson correlation). This is not a contradiction. It makes intuitive sense that having more customers willing to favorite company tweets (inevitably positive or neutral in sentiment) would indicate more customers willing to tweet their own positive reaction to the brand. 
+
+Positivity is not equally distributed across customers. I looked at the percentage of unique words and percentage of correctly spelled words per customer profile to see how public presentation affected tweet sentiment. 
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/sentiment_vocab.png" height="460" width="700">
+</p>
+
+In both cases, there are strong positive correlations with sentiment (0.31 for unique, 0.30 for correctly spelled). The more conscientious the profile creator, measured as a more diverse and accurately spelled vocabulary, the more likely to tweet positively. All things equal, this may be a factor to consider when targeting new customers. 
 
 ## #Marketing by Day & Time
 
@@ -117,10 +125,4 @@ From the graphic above, 4pm and 9am jump out as times with high tweet volume and
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/stock_sentiment_2.png" height="420" width="740">
-</p>
-
-#Vocabulary & Sentiment
-
-<p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/sentiment_vocab.png" height="460" width="700">
 </p>
