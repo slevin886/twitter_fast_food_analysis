@@ -120,7 +120,7 @@ The graphic below shows the companies ordered by their market capitalization alo
 Brand favorability on Twitter is not being driven by the market's valuation of the company or its total followers/tweets (in fact the latter have small negative correlaitons with favorability, while market cap has only a small positive correlation). However, as you can see in the next graphic, tweets per follower *does* have a strong positive correlation with overall brand sentiment.
 
 <p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/per_user_sent.png" height="500" width="640">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/per_user_sent.png" height="380" width="620">
 </p>
 
 Looking at a basic 2-degree polynomial OLS model, we are able to capture ~50% of company variation in sentiment looking only at tweets per user. This should give a strong indication that actively tweeting *directly* to your customers (and reaching a higher percentage of them) will pay dividends in reputation. Companies, to varying degrees, seem to already understand this. Of the ~10,000 company tweets I collected, 90.8% were direct customer outreach (i.e. they started with "@CustomerName"). 
@@ -138,3 +138,10 @@ Again, before any interpretation, it is worth reiterating that this sample is sm
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/stock_sentiment_2.png" height="420" width="740">
 </p>
+
+#Predicting Sentiment from Profile
+
+<p align="left">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/classifier%20performance.png" height="420" width="640">
+</p>
+
