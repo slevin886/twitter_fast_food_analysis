@@ -125,10 +125,13 @@ Brand favorability on Twitter is not being driven by the market's valuation of t
 
 Looking at a basic 2-degree polynomial OLS model, we are able to capture ~50% of company variation in sentiment looking only at tweets per user. This should give a strong indication that actively tweeting *directly* to your customers (and reaching a higher percentage of them) will pay dividends in reputation. Companies, to varying degrees, seem to already understand this. Of the ~10,000 company tweets I collected, 90.8% were direct customer outreach (i.e. they started with "@CustomerName"). 
 
+Given that the vast majority of tweets in the sample were direct customer outreach, rather than general marketing tweets, an analysis of company hashtag use may be unreliable (i.e. it is not obvious that I captured all of each company's primary hashtags or a fair representation of their use). However, in so far as companies use their hashtags regularly in direct customer outreach, the graphic below shows company hashtag use and effectiveness in eliciting reuse:
+
 <p align="left">
-  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/comp_tweet_behav.png" height="500" width="640">
+  <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/hash_use.png" height="225" width="640">
 </p>
 
+Again, before any interpretation, it is worth reiterating that this sample is small and likely biased (companies may differ in when they use hashtags (i.e. for/not for direct customer outreach) , but not in overall use). Having said that, there is a strong positive correlation between the volume of company hashtage use and customer reuse (even after controlling for Cracker Barrel). Likewise, there is a strong positive correlation between customer hashtag reuse and tweet sentiment. It stands to reason that using more hashtags, specifically more *unique* hashtags (variation in hashtag use showing a stronger positive correlation with sentiment), can help drive brand favorability. 
 
 #Sentiment & Stock Price
 
