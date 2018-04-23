@@ -145,9 +145,14 @@ To the naked eye, there clearly seems to be some interplay between change in sto
 
 While a longer time-series and a robust accounting of market noise are required to reach any serious conclusions, there is  evidence of a short-term interplay between change in Twitter sentiment and stock price. However, the direction of the interplay is unclear. In fact, the evidence suggests that we need to be cautious for two-way or reverse causality. Rather than changes in sentiment driving stock price (what we might expect/hope to find), changes in the market might be driving customer tweet sentiment through elevated/deflated investor moods. Controlling for overall market direction, and/or identifying a workable instrumental variable, could help parse this out. 
 
-#Predicting Sentiment from Profile
+## #Predicting Tweet Sentiment from a Customer's Profile
+
+Finally, I was interested to see if it was possible to predict tweet sentiment (positive or negative- I removed 'neutral' tweets) based purely on written profiles (or 'bio'- which Twitter limits to 160 characters). Given an approximate 20% error rate in the initial tweet sentiment classification (a rought estimate I calculated by personally scoring a random subset of 100 tweets), this process imposed a maximum accuracy of 80% (even if I had a reported accuracy of 100%, I would have to assume that ~20% were originally misclassified and thus incorrectly classified in the report). Additionally, I assumed a baseline accuracy of 75%, rather than random guessing and 50%, because of class imbalance (in the training data, 75% of tweets were positive, 25% negative). 
+
+Initially, and in the graphic below, I looked to predict tweet sentiment across all companies (using the 3 week data subset). The graphic below shows various model performances (for this graphic, using only default hyperparameters).
 
 <p align="left">
   <img src="https://github.com/slevin886/twitter_fast_food_analysis/blob/master/images/classifier%20performance.png" height="420" width="640">
 </p>
 
+The initial results weren't encouraging. Recall (*correctly classified positive / (correctly classified positive + incorrectly classified negative*) is alarmingly high and reflects the tendency of several models to classify too few profiles as likely to tweet negatively. As a result, precision (*percentage of correctly classified positive / total classified positive*) tends to hover around the baseline (the models are predicting positive far too often).
